@@ -17,5 +17,5 @@ RUN chmod +x install.sh
 VOLUME /home/$user/domoticz
 EXPOSE 443
 HEALTHCHECK --interval=5m --timeout=3s \
- CMD curl -f http://localhost:443/ || exit 1
+ CMD curl -f http://localhost:8080/ || exit 1
 ENTRYPOINT /start.sh 
