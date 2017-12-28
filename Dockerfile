@@ -1,6 +1,6 @@
 FROM arm32v7/ubuntu
 RUN apt update
-RUN apt install -y tzdata iproute2 nano net-tools wget whiptail git apt-utils sudo curl libcurl3
+RUN apt install -y tzdata iproute2 nano net-tools wget whiptail git apt-utils sudo curl libcurl3 cron
 RUN rm /etc/localtime && ln -s /usr/share/zoneinfo/Europe/Kiev /etc/localtime
 ENV user=pi
 ENV passwd=home
